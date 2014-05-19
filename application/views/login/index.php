@@ -69,7 +69,7 @@
 	<h1>Welcome!</h1>
 
 	<div id="body">
-		<p>You're see active users in the wifi system of north-west branch of Megafon Retail. You can to add <a href="<?= base_url('index.php/welcome/add'); ?>">one more user</a></p>
+		<p>Please, login to the system</p>
 		<?= form_open(base_url('index.php/login')); ?>
 		<p>
 			Login:<br/>
