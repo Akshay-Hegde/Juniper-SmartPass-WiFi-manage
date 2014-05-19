@@ -6,6 +6,8 @@ class Login extends CI_Controller
 	{
 		parent::__construct();
 		$this->config->load('app_config', true);
+		$app_config = $this->config->item('app_config');
+		$this->load->library('adldap', $app_config);
 		$this->load->library('adldap');
 		$this->load->helper('form');
 		$this->load->helper('url');
