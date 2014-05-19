@@ -1,4 +1,4 @@
-Juniper-SmartPass-WiFi-manage
+Juniper SmartPass WiFi manage
 =============================
 
 Codeigniter based
