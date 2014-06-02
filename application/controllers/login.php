@@ -19,9 +19,9 @@ class Login extends CI_Controller
 		if ($_POST)
 		{
 			$authResult = $this->adldap->authenticate($_POST['login'], $_POST['password']);
+			$admin_group = $this->config->item('admin_group', 'app_config');
 			if ($authResult == TRUE)
 			{
-				$admin_group = $this->config->item('admin_group', 'adldap');
 				$groupResult = $this->adldap->user_ingroup($_POST['login'], $admin_group);
                 $user_session = array(
                        'user_logged'  =>  TRUE,
